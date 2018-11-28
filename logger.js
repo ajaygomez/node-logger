@@ -1,5 +1,5 @@
 // name: logger.js
-// version: 0.0.1
+// version: 0.0.2
 // http://github.com/quirkey/node-logger
 /*
 
@@ -29,7 +29,7 @@ OTHER DEALINGS IN THE SOFTWARE.
 */
 
 var path = require('path'),
-    sys  = require('sys'),
+    sys  = require('util'),
     fs   = require('fs');
 
 var makeArray = function(nonarray) { 

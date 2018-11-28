@@ -1,6 +1,8 @@
 # node-logger
 
-[http://github.com/quirkey/node-logger](http://github.com/quirkey/node-logger)
+[https://github.com/ajaygomez/node-logger.git](https://github.com/ajaygomez/node-logger.git)
+
+Forked from quirkey/node-logger to remove deprecated sys functions.  Now using util instead.
 
 ## SUMMARY
 
@@ -24,7 +26,7 @@ By default, a logger writes to STDOUT, but given a writeable file path, it will 
 
 ### Logging:
 
-Any of the logging methods take `n` arguments, which are each joined by ' ' (similar to `console.log()`). If an argument is not a string, it is string-ified by `sys.inspect()`
+Any of the logging methods take `n` arguments, which are each joined by ' ' (similar to `console.log()`). If an argument is not a string, it is string-ified by `util.inspect()`
 
     logger.info('loading an array', [1,2,3], 'now!');
     //=> info [Sat Jun 12 2010 01:12:05 GMT-0400 (EDT)]  loading an array [ 1, 2, 3, [length]: 3 ] now!
